@@ -7,11 +7,11 @@ const FeaturedBooks = async() => {
  const topBooks=books.slice(0, 4);
 
   return (
-    <div>
+    <div className='container mx-auto '>
      <h2 className='text-2xl font-bold my-8'>
       Featured Books: 
       </h2>
-      <div>
+      <div className='grid grid-cols-4 gap-4 my-10'>
        {topBooks.map(book=><BookCard key={book.id}book={book} />)}
         
 

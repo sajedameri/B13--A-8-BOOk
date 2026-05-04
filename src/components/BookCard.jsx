@@ -4,18 +4,19 @@ import Image from 'next/image'
 const BookCard = ({book}) => {
   console.log(book)
   return (
-  <Card>
-<div>
+  <Card className=" border">
+<div className="relative w-full aspect-square">
   <Image
   src={book.image_url}
-  height={200}
-  width={200}
+  fill
+
+  
   alt={book.title}
-  className="rounded"
+  className="rounded-xl object-cover"
   />
 </div>
 <div>
-  <h2 className="text-md font-bole">{book.title}</h2>
+  <h2 className="text-xl font-bole">{book.title}</h2>
 </div>
 <div>
 <button>Book Details</button>

@@ -6,7 +6,7 @@
     "description": "A touching story about life along a quiet river village and its hidden secrets.",
     "category": "Story",
     "available_quantity": 5,
-    "image_url": "https://example.com/images/silent_river.jpg"
+    "image_url": "https://i.ibb.co/TqmbvDd3/9787550047334.jpg"
   },
   {
     "id": 2,
@@ -15,7 +15,7 @@
     "description": "An exploration of artificial intelligence and its impact on humanity.",
     "category": "Tech",
     "available_quantity": 8,
-    "image_url": "https://example.com/images/future_ai.jpg"
+    "image_url": "https://i.ibb.co/R4jdZh4V/cover.webp"
   },
   {
     "id": 3,
@@ -24,7 +24,7 @@
     "description": "A beginner-friendly guide to quantum physics and its mysteries.",
     "category": "Science",
     "available_quantity": 6,
-    "image_url": "https://example.com/images/quantum_world.jpg"
+    "image_url": "https://i.ibb.co/XrL39hXw/34622452.jpg"
   },
   {
     "id": 4,
@@ -33,7 +33,7 @@
     "description": "A gripping story of love, loss, and rediscovery.",
     "category": "Story",
     "available_quantity": 4,
-    "image_url": "https://example.com/images/lost_memories.jpg"
+    "image_url": "https://i.ibb.co/hRWrjKQ7/MIT-Alzheimers-1.jpg"
   },
   {
     "id": 5,
@@ -42,7 +42,7 @@
     "description": "A complete guide to modern JavaScript development.",
     "category": "Tech",
     "available_quantity": 10,
-    "image_url": "https://example.com/images/javascript.jpg"
+    "image_url": "https://i.ibb.co/B29N4bqV/Mastering-Javascript.png"
   },
   {
     "id": 6,
@@ -51,7 +51,7 @@
     "description": "Understanding how the human brain works and processes information.",
     "category": "Science",
     "available_quantity": 7,
-    "image_url": "https://example.com/images/human_brain.jpg"
+    "image_url": "https://i.ibb.co/mrXkf8kD/6815530.jpg"
   },
   {
     "id": 7,
@@ -60,7 +60,7 @@
     "description": "A journey of adventure and self-discovery across continents.",
     "category": "Story",
     "available_quantity": 3,
-    "image_url": "https://example.com/images/beyond_horizon.jpg"
+    "image_url": "https://i.ibb.co/xSGk8rxX/54833611.jpg"
   },
   {
     "id": 8,
@@ -69,7 +69,7 @@
     "description": "Learn HTML, CSS, and JavaScript from scratch.",
     "category": "Tech",
     "available_quantity": 12,
-    "image_url": "https://example.com/images/web_dev.jpg"
+    "image_url": "https://i.ibb.co/mVGH0RTy/54330264.jpg"
   },
   {
     "id": 9,
@@ -78,7 +78,7 @@
     "description": "The history and future of human space travel.",
     "category": "Science",
     "available_quantity": 5,
-    "image_url": "https://example.com/images/space_exploration.jpg"
+    "image_url": "https://i.ibb.co/RG9ndbq8/Ill-Hist-Space-cover1-Amber-thumb.jpg"
   },
   {
     "id": 10,
@@ -87,7 +87,7 @@
     "description": "A historical fiction novel blending past and present.",
     "category": "Story",
     "available_quantity": 6,
-    "image_url": "https://example.com/images/echoes_time.jpg"
+    "image_url": "https://i.ibb.co/jvLCrBGM/Echoes-in-Time-ebook-cover-86ede335e1.jpg"
   },
   {
     "id": 11,
@@ -96,7 +96,7 @@
     "description": "A deep dive into data structures and algorithms.",
     "category": "Tech",
     "available_quantity": 9,
-    "image_url": "https://example.com/images/data_structures.jpg"
+    "image_url": "https://i.ibb.co/zYcJp86/61-ZN1lif-JWL-AC-UF1000-1000-QL80.jpg"
   },
   {
     "id": 12,
@@ -105,6 +105,6 @@
     "description": "Scientific analysis of global climate change and its effects.",
     "category": "Science",
     "available_quantity": 7,
-    "image_url": "https://example.com/images/climate_change.jpg"
+    "image_url": "https://i.ibb.co/KxN06Kbr/9781009691185i.jpg"
   }
 ]

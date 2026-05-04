@@ -1,5 +1,8 @@
-import React from 'react';
 
+import Link from 'next/link';
+import React from 'react';
+import { FaUserCircle } from "react-icons/fa";
+import NavLink from './NavLink';
 const Navbar = () => {
   return (
     <div>
@@ -12,36 +15,37 @@ const Navbar = () => {
       <ul
         tabIndex="-1"
         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-        <li><a>Item 1</a></li>
-        <li>
-          <a>Parent</a>
-          <ul className="p-2">
-            <li><a>Submenu 1</a></li>
-            <li><a>Submenu 2</a></li>
-          </ul>
-        </li>
-        <li><a>Item 3</a></li>
+     <li><NavLink href={"/"}>Home</NavLink></li>
+      <li>
+        <NavLink href={"/all-books"}>All Books</NavLink>
+      </li>
+
+       <li>
+        <NavLink href={"/my-profile"} className={"text-yellow-500"}>My Profile</NavLink>
+      </li>
       </ul>
     </div>
-    <a className="btn btn-ghost text-xl">daisyUI</a>
+    <a className="btn btn-ghost text-xl">Mary Book House</a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
-      <li><a>Item 1</a></li>
+      
+     <li><NavLink href={"/"}>Home</NavLink></li>
       <li>
-        <details>
-          <summary>Parent</summary>
-          <ul className="p-2 bg-base-100 w-40 z-1">
-            <li><a>Submenu 1</a></li>
-            <li><a>Submenu 2</a></li>
-          </ul>
-        </details>
+        <NavLink href={"/all-books"}>All Books</NavLink>
       </li>
-      <li><a>Item 3</a></li>
+
+       <li>
+        <NavLink href={"/my-profile"}>My Profile</NavLink>
+      </li>
     </ul>
   </div>
-  <div className="navbar-end">
+  
+  <div className="navbar-end flex gap-4">
+       <FaUserCircle size={30} />
     <a className="btn">Button</a>
+     <a className="btn">Button</a>
+  
   </div>
 </div>
     </div>

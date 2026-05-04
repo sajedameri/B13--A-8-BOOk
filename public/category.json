@@ -1,0 +1,14 @@
+[
+  { "id": 1, "category": "Story" },
+  { "id": 2, "category": "Tech" },
+  { "id": 3, "category": "Science" },
+  { "id": 4, "category": "History" },
+  { "id": 5, "category": "Biography" },
+  { "id": 6, "category": "Fantasy" },
+  { "id": 7, "category": "Mystery" },
+  { "id": 8, "category": "Romance" },
+  { "id": 9, "category": "Horror" },
+  { "id": 10, "category": "Self-Development" },
+  { "id": 11, "category": "Programming" },
+  { "id": 12, "category": "Business" }
+]

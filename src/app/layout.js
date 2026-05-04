@@ -2,6 +2,7 @@ import { Outfit} from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Marquee from "@/components/Marquee";
 
 
 
@@ -26,6 +27,7 @@ export default function RootLayout({ children }) {
     
       <body className="min-h-full flex flex-col">
         <Navbar/>
+        <Marquee/>
        
       {children}  </body>
       <Footer/>

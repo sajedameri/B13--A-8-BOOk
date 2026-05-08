@@ -1,7 +1,10 @@
 "use client";
+import { authClient } from "@/lib/auth-client";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const LoginPage = () => {
   const {
@@ -9,10 +12,28 @@ const LoginPage = () => {
     handleSubmit,
     formState: { errors },
   } = useForm();
-  const handleLoginFunc = (data) => {
+
+   const handleGoogleSignin = async()=>{
+        const data = await authClient.signIn.social({
+    provider: "google",
+  });
+  console.log(data,"data")
+    }
+
+  const handleLoginFunc = async (data) => {
+    const { data: res, error } = await authClient.signIn.email({
+      email: data.email, // required
+      password: data.password, // required
+      rememberMe: true,
+      callbackURL: "/",
+    });
+      if (error) {
+    toast(error.message);
+  }
+   
+
     console.log(data, "data");
   };
-  console.log(errors);
 
   return (
     <div className="container mx-auto min-h-[100vh] flex justify-center items-center">
@@ -28,7 +49,7 @@ const LoginPage = () => {
               {...register("email", { required: "Email field is required" })}
               placeholder="Enter your Email"
             />
-              {errors.email && (
+            {errors.email && (
               <p className="text-red-500">{errors.email.message}</p>
             )}
           </fieldset>
@@ -48,8 +69,19 @@ const LoginPage = () => {
             )}
           </fieldset>
 
-          <button className="btn w-full">Login</button>
+          <button className="btn w-full text-xl">Login</button>
+
+          
         </form>
+        <div>
+            <h2 className="text-xl text-center">Or</h2>
+            <button
+              className="btn w-full bg-gray-600 text-white text-xl"
+              onClick={handleGoogleSignin}
+            >
+              Google
+            </button>
+          </div>
 
         <p className="mt-4">
           Don't have an Account?
@@ -58,6 +90,7 @@ const LoginPage = () => {
           </Link>
         </p>
       </div>
+       <ToastContainer/>
     </div>
   );
 };

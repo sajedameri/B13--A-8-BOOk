@@ -1,19 +1,38 @@
 "use client";
+import { authClient } from "@/lib/auth-client";
 import Link from "next/link";
 import React from "react";
 import { useForm } from "react-hook-form";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
-const RegisterPage = () => {
+const RegisterPage =  () => {
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
-  const handleLoginFunc = (data) => {
-    console.log(data, "data");
-  };
-  console.log(errors);
+  const handleLoginFunc = async (data) => {
+    
 
+ 
+  const { data:res, error } = await authClient.signUp.email({
+    name: data.name, // required
+    email: data.email, // required
+    password:data. password, // required
+    image:data.photo,
+    callbackURL: "/",
+   
+});
+ console.log(res,error)
+if (error) {
+  toast.error(error.message);
+}
+
+if (res) {
+  toast.success("Signup successful!");
+}
+  };
   return (
     <div className="container mx-auto min-h-[100vh] flex justify-center items-center">
       <div className="p-4 rounded bg-base-200 my-15">
@@ -47,7 +66,7 @@ const RegisterPage = () => {
           </fieldset>
 
             <fieldset className="fieldset">
-            <legend className="fieldset-legend">Photo</legend>
+            <legend className="fieldset-legend">Photo URL</legend>
             <input
               type="text"
               className="input"
@@ -74,11 +93,14 @@ const RegisterPage = () => {
             )}
           </fieldset>
 
-          <button className="btn w-full bg-gray-900 text-white">Register</button>
+          <button className="btn w-full bg-gray-900 text-white"><Link href={"/loginpage"}>Register</Link>
+          </button>
+         
         </form>
 
         
       </div>
+        <ToastContainer />
     </div>
   );
 };

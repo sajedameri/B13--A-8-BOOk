@@ -4,6 +4,7 @@ import { authClient } from "@/lib/auth-client";
 import { Card } from "@heroui/react";
 import React from "react";
 import { Avatar } from "@heroui/react";
+import UpdetaProfile from "@/components/UpdetaProfile";
 
 const ProfilePage = () => {
    const { data: session, isPending } = authClient.useSession();
@@ -25,6 +26,7 @@ const ProfilePage = () => {
         </Avatar>
         <p className="text-xl font-bole">{user?.name}</p>
         <p  className="text-xl font-bole">{user?.email}</p>
+       < UpdetaProfile/>
       </Card>
     </div>
   );

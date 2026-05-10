@@ -1,11 +1,12 @@
 "use client";
 import Link from "next/link";
 import React from "react";
-import { FaUserCircle } from "react-icons/fa";
+
 import NavLink from "./NavLink";
 import { authClient } from "@/lib/auth-client";
 import Image from "next/image";
 
+import { FaRegUserCircle } from "react-icons/fa";
 const Navbar = () => {
   const { data: session, isPending } = authClient.useSession();
 
@@ -68,7 +69,7 @@ const Navbar = () => {
           <>
             <h2 className="font-medium">Hello, {user?.name}</h2>
 
-            {user.image ? (
+            {user?.image ? (
               <Image
                 src={user.image}
                 width={35}
@@ -77,7 +78,7 @@ const Navbar = () => {
                 alt="user"
               />
             ) : (
-              <FaUserCircle size={28} />
+              <FaRegUserCircle size={28} />
             )}
 
             <button className="btn bg-pink-300" onClick={async()=>await authClient.signOut()}>Logout</button>

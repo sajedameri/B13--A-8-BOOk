@@ -1,3 +1,4 @@
+import { Link } from '@heroui/react';
 import React from 'react';
 
 
@@ -16,7 +17,7 @@ const Banner = () => {
     <div className="max-w-md">
       <h1 className="mb-5 text-5xl font-bold">Find Your Next Read</h1>
       
-      <button className="btn btn-primary">Browse Now</button>
+      <button className="btn btn-primary"><Link href='/all-books'>Browse New</Link></button>
     </div>
   </div>
 </div>

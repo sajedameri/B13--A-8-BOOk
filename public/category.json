@@ -1,14 +1,65 @@
-[
-  { "id": 1, "category": "Story" },
-  { "id": 2, "category": "Tech" },
-  { "id": 3, "category": "Science" },
-  { "id": 4, "category": "History" },
-  { "id": 5, "category": "Biography" },
-  { "id": 6, "category": "Fantasy" },
-  { "id": 7, "category": "Mystery" },
-  { "id": 8, "category": "Romance" },
-  { "id": 9, "category": "Horror" },
-  { "id": 10, "category": "Self-Development" },
-  { "id": 11, "category": "Programming" },
-  { "id": 12, "category": "Business" }
+ [
+
+    {
+      "id": 1,
+      "name": "Story",
+      "slug": "story"
+    },
+    {
+      "id": 2,
+      "name": "Tech",
+      "slug": "tech"
+    },
+    {
+      "id": 3,
+      "name": "Science",
+      "slug": "science"
+    },
+    {
+      "id": 4,
+      "name": "History",
+      "slug": "history"
+    },
+    {
+      "id": 5,
+      "name": "Biography",
+      "slug": "biography"
+    },
+    {
+      "id": 6,
+      "name": "Fantasy",
+      "slug": "fantasy"
+    },
+    {
+      "id": 7,
+      "name": "Mystery",
+      "slug": "mystery"
+    },
+    {
+      "id": 8,
+      "name": "Romance",
+      "slug": "romance"
+    },
+    {
+      "id": 9,
+      "name": "Horror",
+      "slug": "horror"
+    },
+    {
+      "id": 10,
+      "name": "Self-Development",
+      "slug": "self-development"
+    },
+    {
+      "id": 11,
+      "name": "Programming",
+      "slug": "programming"
+    },
+    {
+      "id": 12,
+      "name": "Business",
+      "slug": "business"
+    }
+  
+
 ]

@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { Button, Input, Label, Modal, Surface, TextField } from "@heroui/react";
 import { BiUser } from "react-icons/bi";
 import { authClient } from "@/lib/auth-client";
 
 const UpdataProfile = () => {
+  const [open,setOpen] =useState(false)
   const onSubmit = async (e) => {
     e.preventDefault();
 
@@ -14,13 +15,13 @@ const UpdataProfile = () => {
       name,
       image,
     });
-
+setOpen(false);
     
   };
 
   return (
     <div>
-      <Modal>
+      <Modal isOpen={open} onOpenChange ={setOpen}>
         <Button variant="secondary">Update Profile</Button>
 
         <Modal.Backdrop>

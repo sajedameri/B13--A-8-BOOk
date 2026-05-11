@@ -18,5 +18,5 @@ return NextResponse.redirect(new URL('/loginpage', request.url))
 }
  
 export const config = {
-  matcher: ['/profile','/all-books/:path'],
+  matcher: ['/profile','/all-books/:path+'],
 }

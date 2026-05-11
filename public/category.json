@@ -1,65 +1,53 @@
- [
-
+{
+  "name": "bookCategories",
+  "categories": [
     {
       "id": 1,
-      "name": "Story",
-      "slug": "story"
+      "category": "Story"
     },
     {
       "id": 2,
-      "name": "Tech",
-      "slug": "tech"
+      "category": "Tech"
     },
     {
       "id": 3,
-      "name": "Science",
-      "slug": "science"
+      "category": "Science"
     },
     {
       "id": 4,
-      "name": "History",
-      "slug": "history"
+      "category": "History"
     },
     {
       "id": 5,
-      "name": "Biography",
-      "slug": "biography"
+      "category": "Biography"
     },
     {
       "id": 6,
-      "name": "Fantasy",
-      "slug": "fantasy"
+      "category": "Fantasy"
     },
     {
       "id": 7,
-      "name": "Mystery",
-      "slug": "mystery"
+      "category": "Mystery"
     },
     {
       "id": 8,
-      "name": "Romance",
-      "slug": "romance"
+      "category": "Romance"
     },
     {
       "id": 9,
-      "name": "Horror",
-      "slug": "horror"
+      "category": "Horror"
     },
     {
       "id": 10,
-      "name": "Self-Development",
-      "slug": "self-development"
+      "category": "Self-Development"
     },
     {
       "id": 11,
-      "name": "Programming",
-      "slug": "programming"
+      "category": "Programming"
     },
     {
       "id": 12,
-      "name": "Business",
-      "slug": "business"
+      "category": "Business"
     }
-  
-
-]
+  ]
+}

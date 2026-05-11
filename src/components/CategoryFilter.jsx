@@ -1,16 +1,29 @@
-import React from 'react';
+import Link from "next/link";
+import React from "react";
 
-const CategoryFilter = async() => {
-    const res = await fetch('https://b13-a-8-bo-ok.vercel.app/category.json');
-  const categorys =await res.json()
-  console.log(categorys)
-  
+const CategoryFilter = async () => {
+  const res = await fetch("https://b13-a-8-bo-ok.vercel.app/category.json");
+  const categories = await res.json();
+  console.log(categories);
+
   return (
     <div>
-      <h2 className='text-xl font-bold'>All Category</h2>
-     {
-      categorys.map(category=><li key={category.id}>{id.category}</li>)
-     }
+      <h2 className="text-xl font-bold my-6">All Category</h2>
+     <div className="sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+       {categories.map((category) => <Link  key={category.id} href={`?category=${category?.category?.toLowerCase()}`}>
+
+        <button
+          className="bg-amber-50 p-5 rounded-md font-bold text-accent text-xl w-full my-5"
+         >
+        {category.category}
+       
+         
+          
+        </button>
+        </Link>
+      
+      )}
+     </div>
     </div>
   );
 };

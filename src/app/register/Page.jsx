@@ -27,7 +27,7 @@ const RegisterPage = () => {
       callbackURL: "/",
     });
     console.log(res, error);
-      window.location.href="/"
+   
 
     if (error) {
       toast.error(error.message);
@@ -35,7 +35,7 @@ const RegisterPage = () => {
 
     if (res) {
       toast.success("Signup successful!");
-    
+       window.location.href="/loginpage"
     }
   };
   return (
@@ -100,9 +100,9 @@ const RegisterPage = () => {
             )}
           </fieldset>
 
-          <button className="btn w-full bg-gray-900 text-white">
+         <Link href="/loginpage"> <button className="btn w-full bg-gray-900 text-white">
            Register
-          </button>
+          </button></Link>
         </form>
         <div>
           <h2 className="text-xl text-center">Or</h2>

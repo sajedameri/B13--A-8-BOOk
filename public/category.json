@@ -1,6 +1,4 @@
-{
-  "name": "bookCategories",
-  "categories": [
+ [
     {
       "id": 1,
       "category": "Story"
@@ -50,4 +48,3 @@
       "category": "Business"
     }
   ]
-}

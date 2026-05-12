@@ -7,13 +7,13 @@ import React from "react";
 const AllBookspage = async ({ searchParams }) => {
   const { category } = await searchParams;
   console.log(category);
-  const res = await fetch("https://b13-a-8-bo-ok.vercel.app/data.json");
+  const res = await fetch("https://marybookhouse.vercel.app/data.json");
   const books = await res.json();
-  const filteredBooks = category
+  const filteredBooks = (category
     ? books.filter(
         (book) => book.category.toLowerCase() == category.toLowerCase(),
       )
-    : books;
+    : books)||[];
 
   return (
     <div className="container mx-auto ">

@@ -4,7 +4,7 @@ import React from "react";
 const BookDetailsPage = async ({ params }) => {
   const { id } = await params;
 
-  const res = await fetch("https://b13-a-8-bo-ok.vercel.app/data.json");
+  const res = await fetch("https://marybookhouse.vercel.app/data.json");
   const books = await res.json();
 
   const book = books.find((b) => b.id == id);

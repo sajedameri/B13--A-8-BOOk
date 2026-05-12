@@ -2,7 +2,7 @@ import React from 'react';
 import BookCard from './BookCard';
 
 const FeaturedBooks = async() => {
-  const res = await fetch('https://b13-a-8-bo-ok.vercel.app/data.json')
+  const res = await fetch('https://marybookhouse.vercel.app/data.json')
   const books =await res.json();
  const topBooks=books.slice(0, 4);
 

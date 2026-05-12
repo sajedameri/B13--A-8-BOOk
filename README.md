@@ -1,26 +1,89 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 📚 B13--A-8-BOOk
 
-## Getting Started
+A modern online library management web application built with Next.js. Users can browse books, filter by category, search books, and borrow books with authentication support.
 
-First, run the development server:
+## 🚀 Live Website
+
+🌐 Live Link: https://b13-a-8-bo-ok.vercel.app/
+
+## ✨ Features
+
+* 🔐 Authentication & Protected Routes
+* 📚 Browse All Books
+* 🔎 Search Books by Title
+* 🗂️ Category Based Filtering
+* 📖 Single Book Details Page
+* 📦 Borrow Book Functionality
+* 📱 Fully Responsive Design
+* ⚡ Modern UI with Tailwind CSS
+* 🔔 Toast Notifications
+
+## 🛠️ Technologies Used
+
+* Next.js
+* React
+* Tailwind CSS
+* MongoDB / JSON Data
+* NextAuth / Better Auth
+* React Icons
+* SweetAlert2 / Toast
+
+## 📂 Pages
+
+* Home Page
+* All Books Page
+* Book Details Page
+* Login & Register Page
+* Borrowed Books Page
+
+## 🔑 Protected Route
+
+The following page is protected and only accessible after login:
+
+* Book Details Page
+* Borrow Book Feature
+
+## 📦 NPM Packages Used
+
+```bash
+npm install react-icons
+npm install sweetalert2
+npm install next-auth
+```
+
+## ⚙️ Installation & Setup
+
+Clone the repository:
+
+```bash
+git clone https://github.com/sajedameri/B13--A-8-BOOk.git
+```
+
+Go to the project folder:
+
+```bash
+cd B13--A-8-BOOk
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open[ [http://localhost:3000](http://localhost:3000) ](https://marybookhouse.vercel.app )with your browser to see the result.
+## 👩‍💻 Author
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Developed by Sajeda Meri
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📜 License
 
-## Learn More
+This project is open-source and available for learning purposes.
 
 To learn more about Next.js, take a look at the following resources:
 
